@@ -1,0 +1,261 @@
+/* public/style.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ca3636;
+    color: #333;
+}
+
+.header {
+    background-color: #004080;
+    color: #c43838;
+    padding: 10px;
+    text-align: right;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #004080;
+}
+
+.vendor-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    width: 30%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+/* public/style.css */
+
+/* ... (existing styles) */
+
+/* .calendar-container {
+    margin-top: 20px;
+    text-align: center;
+} */
+/* public/style.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(11, 63, 126, 0.146); /* Light cream background color */
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: #2100b2; /* Deep orange heading color */
+}
+
+.vendor-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    width: 30%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.card img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.about-us-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(184, 202, 249);
+    color: #0a0808;
+    border-radius: 10px;
+    font-family: 'Arial', sans-serif;
+}
+.calendar-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Adjust the calendar styles */
+.calendar-container iframe {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.booking-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.schedule-booking-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(18, 0, 178); /* Deep orange button color */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.schedule-booking-button:hover {
+    background-color: #13008d; /* Darker shade on hover */
+}
+
+/* public/style.css */
+
+/* ... (existing styles) */
+
+.booking-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.schedule-booking-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #004080;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.schedule-booking-button:hover {
+    background-color: #002366;
+}
+
+.gallery-container {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.galleryImages {
+    margin-bottom: 20px;
+}
+
+.galleryImages img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+/* ... (existing styles) */
+/* public/style.css */
+
+/* ... (existing styles) */
+
+.navbar {
+    background-color: #004080; /* Dark blue navbar color */
+   padding: 10px 0;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.navbar li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+} */
+
+/* style.css */
+
+/* ... (existing styles) */
+
+/* Navigation styles */
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s; /* Add smooth transition effect */
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* ... (existing styles) */
+
+.contact-us-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff; /* White background color */
+    color: #000; /* Black text color */
+    border-radius: 10px;
+    font-family: 'Arial', sans-serif;
+    margin-top: 20px; /* Add margin at the top for separation */
+}
+/* ... (existing styles) */
+/* public/style.css */
