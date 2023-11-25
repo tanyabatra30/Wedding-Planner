@@ -104,20 +104,7 @@ app.get('/', (req, res) => {
             <title>Wedding Planner</title>
         </head>
         <body>
-            <div class="navbar">
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/gallery">Gallery</a></li>
-                    <li><a href="/schedule-booking">Schedule Booking</a></li>
-                    <li><a href="/about">About Us</a></li>
-                    <!-- Add more navigation links as needed -->
-                </ul>
-            </div>
-            <div class="container">
-                <div class="user-info">
-                    <span>${loggedInUser ? loggedInUser.email : 'Guest'}</span>
-                    <button class="logout-button" onclick="logout()">Logout</button>
-                </div>
+            
                 <h1>Wedding  Planner</h1>
                 <h2>Vendors</h2>
                 <div class="vendor-container">
@@ -135,14 +122,7 @@ app.get('/', (req, res) => {
                     <p>At Wedding Planner, we bring together a curated selection of vendors to meet all your wedding needs. From exquisite floral arrangements to professional photography and beautiful venues, we've got you covered.</p>
                     <p>Explore our services, meet our vendors, and let us help you plan the wedding of your dreams.</p>
                 </div>
-                <div class="calendar-container">
-                    <!-- Embed Google Calendar iframe with a smaller size -->
-                    <iframe src="https://calendar.google.com/calendar/embed?src=your-calendar-id" style="border: 0" width="400" height="300" frameborder="0" scrolling="no"></iframe>
-                </div>
-                <div class="booking-container">
-                    <a href="/schedule-booking" class="schedule-booking-button">Schedule Booking</a>
-                </div>
-            </div>
+               
             <div class="gallery-container">
                 <h2>Gallery</h2>
                 <div class="slideshow-container">
@@ -161,24 +141,20 @@ app.get('/', (req, res) => {
 
                     function showSlides() {
                         var slides = document.getElementsByClassName("gallery-slide");
-                        for (var i = 0; i < slides.length; i++) {
-                            slides[i].style.display = "none";
+                        for(var i=0;i<slides.length;i++) {
+                            slides[i].style.display="none";
                         }
                         slideIndex++;
-                        if (slideIndex > slides.length) { slideIndex = 1 }
-                        if (slideIndex < 1) { slideIndex = slides.length }
-                        slides[slideIndex - 1].style.display = "block";
-                        setTimeout(showSlides, 2000); // Change slide every 2 seconds
+                        if (slideIndex>slides.length){slideIndex=1}
+                        if (slideIndex<1){slideIndex=slides.length }
+                        slides[slideIndex-1].style.display="block";
+                        setTimeout(showSlides,2000); // Change slide every 2 seconds
                     }
 
                     function plusSlides(n) {
                         showSlides(slideIndex += n);
                     }
 
-                    function logout() {
-                        // Implement logout functionality here
-                        alert('Logout clicked');
-                    }
                 </script>
                 <div class="contact-us-container">
                 <!-- Include content from contact-us.html -->
@@ -207,5 +183,3 @@ app.get('/logout', (req, res) => {
 app.listen(port, () => {
     console.log(`Server is running at http://localhost:${port}`);
 });
-
-
